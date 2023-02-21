@@ -1,9 +1,19 @@
 import 'i_observer.dart';
 
 abstract class IObservable {
-  void registerObserver(IObserver observer);
+  List<IObserver> observers = [];
 
-  void removeObserver(IObserver observer);
+  void registerObserver(IObserver observer) {
+    observers.add(observer);
+  }
 
-  void notifyObservers();
+  void removeObserver(IObserver observer) {
+    observers.remove(observer);
+  }
+
+  void notifyObservers() {
+    for (IObserver element in observers) {
+      element.update();
+    }
+  }
 }
