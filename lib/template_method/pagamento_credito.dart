@@ -1,6 +1,6 @@
-import 'package:design_patterns/template_method/pagamento.dart';
+import 'package:design_patterns/template_method/i_pagamento.dart';
 
-class PagamentoCredito extends Pagamento {
+class PagamentoCredito extends IPagamento {
   PagamentoCredito(super.valor, super.gateway);
 
   @override

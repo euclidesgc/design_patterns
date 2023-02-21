@@ -1,8 +1,7 @@
-import 'package:design_patterns/Strategy/frete_expresso.dart';
+import '../frete/frete_expresso.dart';
+import 'i_pedido.dart';
 
-import 'pedido.dart';
-
-class PedidoMoveis extends Pedido {
+class PedidoMoveis extends IPedido {
   final String setor = 'Móveis';
 
   PedidoMoveis(super.valor, super.frete);

@@ -1,6 +1,6 @@
-import 'pedido.dart';
+import 'i_pedido.dart';
 
-class PedidoEletronicos extends Pedido {
+class PedidoEletronicos extends IPedido {
   PedidoEletronicos(super.valor, super.frete);
 
   final String setor = 'Eletrônicos';

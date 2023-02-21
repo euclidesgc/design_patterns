@@ -1,6 +1,6 @@
-import 'frete.dart';
+import 'i_frete.dart';
 
-class FreteExpresso implements Frete {
+class FreteExpresso implements IFrete {
   @override
   double calcula(double valor) {
     return valor * 0.1;

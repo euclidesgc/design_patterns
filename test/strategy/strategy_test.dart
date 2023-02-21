@@ -1,7 +1,5 @@
-import 'package:design_patterns/Strategy/frete_comum.dart';
-import 'package:design_patterns/Strategy/frete_expresso.dart';
-import 'package:design_patterns/Strategy/pedidoEletronicos.dart';
-import 'package:design_patterns/Strategy/pedidoMoveis.dart';
+import 'package:design_patterns/strategy/frete/frete.dart';
+import 'package:design_patterns/strategy/pedido/pedido.dart';
 import 'package:test/test.dart';
 
 void main() {
