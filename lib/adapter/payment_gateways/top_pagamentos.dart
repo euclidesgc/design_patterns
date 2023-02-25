@@ -1,4 +1,6 @@
 ///Classe de terceiros que não podemos alterar
+// ignore_for_file: unused_field
+
 class TopPagamentos {
   double _valor = 0.0;
   int _parcelas = 1;
@@ -19,7 +21,6 @@ class TopPagamentos {
   }
 
   bool realizarPagamento() {
-    print('Pagamento realizado com sucesso via TopPagamentos!');
     return true;
   }
 }

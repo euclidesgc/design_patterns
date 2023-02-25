@@ -12,7 +12,6 @@ void main() {
   );
 
   test('Adapter', () async {
-    print('Testando pagFacil:');
     Cobranca cobranca = Cobranca(pagFacilAdapter);
     cobranca.setValor(100);
     cobranca.setParcelas(2);
@@ -21,7 +20,6 @@ void main() {
 
     cobranca.realizarPagamento();
 
-    print('Testando topPagamentos:');
     cobranca = Cobranca(topPagamentosAdapter);
     cobranca.setValor(100);
     cobranca.setParcelas(2);

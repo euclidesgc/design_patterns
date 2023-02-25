@@ -1,4 +1,5 @@
 abstract class Gateway {
+  String getName();
   void setValor(double valor);
   void setParcelas(int parcelas);
   void setNumeroCartao(String numeroCartao);

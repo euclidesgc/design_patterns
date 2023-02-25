@@ -28,14 +28,14 @@ class Cobranca {
   bool realizarPagamento() {
     if (_gateway.validarCartao()) {
       if (_gateway.realizarPagamento()) {
-        print('Pagamento realizado com sucesso!');
+        print('${_gateway.getName()}: Pagamento realizado com sucesso!');
         return true;
       } else {
-        print('Falha ao realizar o pagamento.');
+        print('${_gateway.getName()}: Falha ao realizar o pagamento.');
         return false;
       }
     } else {
-      print('Cartão inválido.');
+      print('${_gateway.getName()}: Cartão inválido.');
       return false;
     }
   }

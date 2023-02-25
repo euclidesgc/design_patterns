@@ -46,4 +46,9 @@ class TopPagamentosAdapter implements Gateway {
   bool validarCartao() {
     return true;
   }
+
+  @override
+  String getName() {
+    return 'TopPagamentos';
+  }
 }

@@ -32,7 +32,6 @@ class PagFacil {
   }
 
   bool realizarPagamento() {
-    print('Pagamento realizado com sucesso via PagFacil!');
     return true;
   }
 }
